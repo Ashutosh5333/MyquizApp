@@ -49,17 +49,28 @@ a 15.9155 15.9155 0 0 1 0 -31.831" \
 </svg>';
 document.getElementById("report").innerHTML = path;
 
+ const  data = () =>{
+      //  `<h2> your Score ${quizscore} is out of ${QuesData.length}  </h2> `
+ let  h1 = document.createElement("h1")
+      h1.innerText=`Your Score ${quizscore} is out of ${QuesData.length} `
+  document.getElementById("reportdata").append(h1)
+
+}
+      data()
+      
+      
+
+
+
 const display = ()=>{
       let h2 = document.createElement("h2");
       let p = document.createElement("p");
       if(quizscore >= 5){
             h2.innerText = `Hey ${userName.Name} Congrats! You are pass.`
-            
       }
       else{
           h2.innerText = ` Hey ${userName.Name} Oops! You are fail.`
       }
-
       p.innerText  = `Score : ${quizscore}`
       document.getElementById('resultDetail').append(h2,p);
       
