@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+  background: url(https://thumbs.dreamstime.com/z/vector-realistic-isolated-neon-sign-quiz-frames-logo-template-decoration-covering-wall-background-concept-trivia-193733773.jpg);
+   scroll-behavior: smooth;
+   height: 150vh;
+   width: auto;
+ /* background: no-repeat; */
+  
+}
