@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Stores</title>
+    <style>
+          h1{
+            text-align: center;
+        }
+        #form{
+             width: 400px;
+             height: 200px;
+             margin: auto;        
+        }
+         input{
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+            justify-content: center;
+            width: 250px;
+            height: 30px;
+         }
+    </style>
+</head>
+<body>
+    <!-- <h1> Admin page</h1> -->
+
+      <div class="form">
+         <form id="form"> 
+         <br>
+        <input  placeholder="ques"  id="ques" />
+        <br>
+        <input   placeholder="option A"  id="optionA" />
+        <br>
+        <input   placeholder="option B"  id="optionB" />
+        <br>
+        <input   placeholder="option C"  id="optionC" />
+        <br>
+        <input   placeholder="option D"  id="optionD" />
+        <br>
+        <input   placeholder="answer"  id="answer" />
+        <br>
+          <input id="submit" type="submit" />
+       </form>
+      </div>
+    
+</body>
+</html>
+<script>
+     let QuesData = JSON.parse(localStorage.getItem("data"))||[]
+
+console.log("quesarr" ,QuesData)
+
+ document.getElementById("form").addEventListener("submit", Questionsubmit)
+
+  function Questionsubmit(e){
+     e.preventDefault()
+     
+      let obj ={
+          ques:form.ques.value,
+          optionA:form.optionA.value,
+          optionB:form.optionB.value,
+          optionC:form.optionC.value,
+          optionD:form.optionD.value,
+          answer:form.answer.value
+      }
+     
+      QuesData.push(obj)
+       localStorage.setItem("data", JSON.stringify(QuesData))
+
+  }
+
+  
+
+</script>

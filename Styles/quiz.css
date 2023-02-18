@@ -1,0 +1,94 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+     background-image: url(https://www.shutterstock.com/image-photo/question-mark-on-blue-background-260nw-1595492578.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+      height: 110vh;
+}
+
+.container{
+     /* border: 1px solid red; */
+     /* text-align: center; */
+    
+      height: 100vh;
+}
+
+h1{
+     text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+}
+
+
+.inner-div{
+     /* border: 1px solid brown; */
+     box-shadow: 0 0 30px rgb(87, 85, 151);
+     width: 60%;
+     margin: auto;
+     position: relative;
+     top: 20%;
+     height: 60vh;
+}
+
+.ques{
+      /* border: 1px solid rgb(50, 100, 17); */
+        margin: auto;
+         width: 90%;
+         height: 10vh;
+         align-items: center;
+        /* margin-top: 20px; */
+        margin-bottom: 20px;
+        /* color: #fff; */
+}
+
+.option{
+     border: 1px solid rgb(219, 217, 208) ;
+      margin: auto;
+       width: 90%;
+       height: 32vh;
+       margin-top: 35px;
+       color: #fff;
+}
+
+.optiondata{
+    display: flex;
+    margin-left: 20px;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons{
+     /* border: 1px solid black; */
+     margin: auto;
+      margin-top: 20px;
+       display: flex;
+       justify-content: space-around;
+       width: 90%;
+}
+
+#next{
+     padding: 15px 35px ;
+     border: none;
+     border-radius: 10px;
+     background: rgb(57, 193, 57);
+     color: #fff;
+     font-weight: 600;
+     font-size: 1.2rem;
+}
+#skip{
+    padding: 15px 35px ;
+    border: none;
+    border-radius: 10px;
+    background: rgb(180, 44, 44);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+

@@ -11,6 +11,8 @@ function Signupsubmit(e){
       Password:form.userpassword.value,
       confirm:form.confirm.value
     }
+
+    
     if( userdata.Name =="" && userdata.Email=="" && userdata.Password=="" && userdata.confirm==""  ){
       alert("Please  fill the detail")
    }
@@ -21,7 +23,7 @@ function Signupsubmit(e){
      }else{
          alert("Password Wrong")
      }
-    // window.location.reload()
+  
      form.reset()
   
 }

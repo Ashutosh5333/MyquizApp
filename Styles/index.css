@@ -50,3 +50,33 @@ a{
       border: none;
 }
 
+
+
+@media screen and (max-width:1024px) {
+   #start{
+    
+    padding: 15px 80px;
+    font-size: 30px;
+   }
+   body{
+     background-repeat: no-repeat;
+   }
+  
+}
+
+
+@media screen and (max-width:600px) {
+  #start{
+   
+   padding: 10px 30px;
+   position: relative;
+   top:23%;
+   left: 30%;
+   letter-spacing: 5px;
+   font-size: 20px;
+  }
+ 
+
+}
+
+

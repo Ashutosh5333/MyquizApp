@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg);
+    background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 100vh; */
+     height: 700px;
+}
+
+#main{
+  width: 50%;
+  margin-top: 50px;
+}
+h1{
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+}
+
+
+/* ---------------- */

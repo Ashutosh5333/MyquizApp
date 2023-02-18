@@ -11,6 +11,7 @@ body{
    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    cursor: pointer;
 }
 
   
@@ -23,9 +24,10 @@ body{
     width:  500px;
     height: 450px;
     border-radius: 5px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 40px;
-    border: 1px solid rgb(23, 122, 122);
+    /* border: 1px solid rgb(23, 122, 122); */
+     box-shadow: 0 0 30px black;
        justify-content: center;
        padding: 20px 25px;
   }
@@ -53,19 +55,58 @@ body{
   }
   
   .submit{
-         width: 150px;
-           background-color: rgb(23, 122, 122);
-           height: 40px;
+         width: 320px;
+           /* background-color: rgb(89, 81, 16); */
+           background-color: goldenrod ;
+           height: 50px;
          justify-content: center;
           border: none;
-          border-radius: 10px;
-          /* color: rgb(18, 90, 83); */
-          color: #fff;
-          font-weight: 600;
+          letter-spacing: 1px;
+          color: rgb(5, 5, 4);
+           font-size: 22px;
+          /* font-weight: 600; */
           text-align: center;
           align-items: center;
           justify-content: center;
              margin-bottom: 10px;
   }
+  .submit:hover{
+    background-color:  darkgoldenrod ;
+     color: black;
+  }
   
+@media screen and (max-width:667px) {
+   #form{
+    width:  400px;
+    height: 450px;
+   }
+  input{
+     width: 250px;
+  }
+  .submit{
+    width: 250px;
+  }
+
+}
+
+
+@media screen and (max-width:1024px) {
+  #form{
+   width:  300px;
+   height: 450px;
+   margin: auto;
+  }
+  input{
+    width: 200px;
+ }
+ .submit{
+   width: 200px;
+ }
+ h2{
+  /* margin-top: 50px; */
+  margin-bottom: 20px;
+ }
+ 
+}
+
   
