@@ -9,6 +9,44 @@ body{
    scroll-behavior: smooth;
    height: 150vh;
    width: auto;
- /* background: no-repeat; */
-  
+   /* position: relative; */
 }
+
+.navbar{
+     display: flex;
+      justify-content: space-evenly;
+      height:  70px;
+         /* position: sticky; */
+       align-items: center;
+       background-color: black;
+     
+        box-shadow: 0 0 10px  rgb(24, 218, 218);
+}
+
+a{
+    text-decoration: none;
+    font-size:xx-large;
+    font-weight: 600;
+    /* color: rgb(165, 110, 42); */
+    color: #fff;
+}
+
+
+#start{
+        padding: 40px 120px;
+        margin: auto;
+         /* justify-content: center; */
+         position: relative;
+         top:18%;
+         left: 38%;
+         letter-spacing: 5px;
+         font-size: 40px;
+  border-radius: 10px;
+   background-color: blueviolet;
+    color: #fff;
+    font-weight: 600;
+     font-style: italic;
+     box-shadow: 0 0 20px  rgb(57, 9, 92);
+      border: none;
+}
+
