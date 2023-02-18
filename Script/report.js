@@ -47,7 +47,7 @@ a 15.9155 15.9155 0 0 1 0 -31.831" \
       fillColor +
       '%</text> \
 </svg>';
-document.getElementById("report").innerHTML = path;
+// document.getElementById("report").innerHTML = path;
 
  const  data = () =>{
       //  `<h2> your Score ${quizscore} is out of ${QuesData.length}  </h2> `
@@ -76,4 +76,14 @@ const display = ()=>{
       
 }
 display()
+
+// ----------- 
+   function playagain(){
+      //  console.log("hello")
+        window.location.href="../pages/quiz.html"
+   }
+  
+    function playhome(){
+         window.location.href="../index.html"
+    }
 
