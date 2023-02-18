@@ -74,6 +74,9 @@ body{
     background-color:  darkgoldenrod ;
      color: black;
   }
+
+  
+/* -----  Small  screen  ------  */
   
 @media screen and (max-width:667px) {
    #form{
@@ -89,6 +92,8 @@ body{
 
 }
 
+
+/* -----  medium screen  ------  */
 
 @media screen and (max-width:1024px) {
   #form{

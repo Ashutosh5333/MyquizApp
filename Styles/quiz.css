@@ -69,18 +69,7 @@ h1{
     margin-bottom: 30px;
 }
 
-/* #optionOne {
-      font-size: 1rem;
-}
-#optiontwo{
-     font-size:  1rem;
-}
-#optionthree{
-     font-size:  1rem;
-}
-#optionFour{
-     font-size:  1rem;
-} */
+
 
 
 .buttons{
@@ -110,6 +99,9 @@ h1{
     font-weight: 600;
     font-size: 1.2rem;
 }
+
+
+/* -----  small screen  ------  */
 
 @media screen and (max-width:667px) {
      .inner-div{
@@ -167,6 +159,8 @@ h1{
 
 }
 
+
+/* -----  medium screen  ------  */
 
 @media screen and (max-width:1024px) {
      .inner-div{

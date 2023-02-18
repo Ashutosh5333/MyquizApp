@@ -3,6 +3,7 @@
 
     //   console.log("quesarr" ,QuesData)
 
+
      let Question = document.getElementById("ques")
      const optionOne = document.getElementById("optionOne")
       const optiontwo = document.getElementById("optiontwo")
@@ -12,15 +13,18 @@
       const Skip = document.getElementById("skip")
 
        let answer = document.querySelectorAll(".checkresult")
+    
        
 
     let quizScore = 0
 
      let questionNo =0
 
+    //  ---------------- Display data  ----------- // 
+
      const Displayquestions = () =>{
          let first = QuesData[questionNo]
-         Question.innerHTML=first.ques
+         Question.innerHTML=`  ${first.ques}`
          optionOne.innerHTML=first.optionA
          optiontwo.innerHTML=first.optionB
          optionthree.innerHTML=first.optionC
@@ -44,6 +48,8 @@
            answer.forEach((cur) => cur.checked=false )
        }
 
+      //  ------------------ Next question and  incesrese score ------------------ //
+
       Next.addEventListener("click", () =>{
            const checkedans = CheckkingAnswer()
            console.log(checkedans)
@@ -64,6 +70,8 @@
              }
 
       })
+
+      // ----------------- Skip question ------------ //
 
        Skip.addEventListener("click", () =>{
          if(questionNo<QuesData.length){

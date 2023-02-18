@@ -51,6 +51,7 @@ a{
 }
 
 
+/* -----  medium screen  ------  */
 
 @media screen and (max-width:1024px) {
    #start{
@@ -64,6 +65,7 @@ a{
   
 }
 
+/* -----  small screen  ------  */
 
 @media screen and (max-width:600px) {
   #start{
