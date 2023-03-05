@@ -14,6 +14,9 @@
       let userName = JSON.parse(localStorage.getItem("userdetail")) || "";
 
 
+      
+	
+
 
 
 //  ---------------- checking condition  ------------------- //
@@ -29,7 +32,28 @@
          color = "green"
          }
 
-
+         var path =
+         '<svg viewbox="0 0 36 36" class="circular-chart ' +
+          color +
+         '"> \
+   <path class="circle-bg" \
+   d="M18 2.0845 \
+   a 15.9155 15.9155 0 0 1 0 31.831 \
+   a 15.9155 15.9155 0 0 1 0 -31.831" \
+   /> \
+   <path class="circle" \
+   stroke-dasharray="' +
+          fillColor +
+         ', 100" \
+   d="M18 2.0845 \
+   a 15.9155 15.9155 0 0 1 0 31.831 \
+   a 15.9155 15.9155 0 0 1 0 -31.831" \
+   /> \
+   <text x="19" y="21" id="percentage">' +
+         fillColor +
+         '%</text> \
+   </svg>';
+   document.getElementById("report").innerHTML = path;
          
 
 
